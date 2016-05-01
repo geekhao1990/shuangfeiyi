@@ -1,0 +1,54 @@
+﻿/*reset*/
+body,ul,ol,li,p,h1,h2,h3,h4,h5,h6,form,fieldset,table,td,img,div,dl,dt,dd,input{margin:0;padding:0;}
+body{font-size:12px;}
+img{border:none;}
+li{list-style:none;}
+input,select,textarea{outline:none;}
+textarea{resize:none;}
+a{text-decoration:none;}
+
+/*浮动*/
+.clearfix:after{content:"";display:block;clear:both;}
+.clearfix{zoom:1;}
+
+.l{ float: left;}
+.r{ float: right;}
+.container{ min-width:960px; margin:0 auto;}
+/*头部*/
+header{ height:200px; background:#0FF;}
+/*中间*/
+article{  
+	background:#FC6;
+	overflow:hidden;
+	}
+article .left{
+	width:300px;
+	background:#FF0;
+	float:left;
+	margin-left:-100%;/*负边距配合float：left和middle一排并排到左面*/
+	margin-bottom:-9999px;
+	padding-bottom:9999px;/*撑开容器，配合父元素overflow:hidden*/
+	}
+article section{
+	background:#9CC;
+	float:left;
+	width:100%;
+	margin-bottom:-9999px;
+	padding-bottom:9999px;
+	}
+article section .inner{
+	margin:0 200px 0 300px;/*把两侧宽度固定的两侧空出来*/
+	}
+
+article .right{
+	width:200px;
+	background:#F99;
+	float:left;
+	margin-left:-200px;/*负边距配合float：left和middle一排并排到右面*/
+	margin-bottom:-9999px;
+	padding-bottom:9999px;
+	}
+footer{ 
+	height:200px; 
+	background:#66F;
+	}
